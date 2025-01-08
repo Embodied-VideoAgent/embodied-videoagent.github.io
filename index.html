@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Embodied-VideoAgent">
+  <meta name="keywords" content="Embodied-VideoAgent">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    .center {
+    display: block;
+        margin: auto;
+    }
+    </style>
+
+  <style>
+    .video-container {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 0;
+    }
+
+    .video-container iframe {
+        max-width: 90%;
+        box-sizing: border-box;
+    }
+</style>
+  <title>Embodied-VideoAgent</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/evideoagent.png">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="https://kit.fontawesome.com/e7284a583b.js" crossorigin="anonymous"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+            
+          <h1 class="title is-2 publication-title">
+            <img src="./static/images/evideoagent.png" alt="Logo" style="vertical-align: middle; width: 50px; height: 50px;">
+            Embodied VideoAgent: Persistent Memory from Egocentric Videos and Embodied Sensors Enables Dynamic Scene Understanding</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://yuefan1014.github.io">Yue Fan</a><sup>1&#x1f4e7;</sup>,</span>
+            <span class="author-block">
+              <a href="https://jeasinema.github.io/">Xiaojian Ma</a><sup>1&#x1f4e7;</sup>,</span>
+            <span class="author-block">
+                <a href="">Rongpeng Su</a><sup>1,2</sup>,</span>
+            <span class="author-block">
+                <a href="https://github.com/sharinka0715">Jun Guo</a><sup>1,3</sup>,</span>
+            <span class="author-block">
+                <a href="https://joyjayng.github.io/">Rujie Wu</a><sup>1,4</sup>,</span>
+            <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=O7X6si8AAAAJ&hl=en">Xi Chen</a><sup>1</sup></span>     
+            <span class="author-block">
+                <a href="https://liqing-ustc.github.io/">Qing Li</a><sup>1&#x1f4e7;</sup></span>                                                                                  
+          </div>
+
+
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>State Key Laboratory of General Artificial Intelligence,
+              BIGAI, Beijing, China</span>
+            <span class="author-block"><sup>2</sup>University of Science and Technology of China</span>
+            <span class="author-block"><sup>3</sup>Tsinghua University</span>
+            <span class="author-block"><sup>4</sup>Peking University</span>
+          </div>
+
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <!-- <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span> -->
+              <span class="link-block">
+                <a href="https://www.arxiv.org/abs/2501.00358"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Tweet Link. -->
+              <!-- <span class="link-block">
+                <a href="https://x.com/jeasinema/status/1769938012631388477?s=20"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fa-brands fa-x-twitter"></i>
+                  </span>
+                  <span>Thread on X</span>
+                  </a>
+              </span> -->
+              <!-- Slides Link. -->
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fa-solid fa-file-powerpoint"></i>
+                  </span>
+                  <span>Slides</span>
+                  </a>
+              </span>
+              <!-- Video Link. -->
+              <!-- <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span> -->
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code(Coming Soon!)</span>
+                  </a>
+              </span>
+            </div>
+          </div>
+
+
+          <br>
+          <img width="95%" src="static/images/teaser.png">
+          <br>
+          <figcaption style="font-size: 18px;font-family: 'Times New Roman', Times, serif;", align="center">Figure 1. Embodied VideoAgent is a multimodal agent that 1) builds scene memory from both egocentric video and embodied sensory input; 2) utilizes multiple tools to query this memory; 3) activates embodied action primitives to interact with the environments, effectively fulfills various user requests.</figcaption>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+    <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+            <div class="column">
+                <h2 class="title is-3">Abstract</h2>
+                <div class="content has-text-justified">
+                <p>
+                    This paper investigates the problem of understanding dynamic 3D scenes from egocentric observations, a key challenge in robotics and embodied AI. Unlike prior studies that explored this as long-form video understanding and utilized egocentric video only, we instead propose an LLM-based agent, Embodied VideoAgent, which constructs scene memory from both egocentric video and embodied sensory inputs (e.g. depth and pose sensing). We further introduce a VLM-based approach to automatically update the memory when actions or activities over objects are perceived. Embodied VideoAgent attains significant advantages over counterparts in challenging reasoning and planning tasks in 3D scenes, achieving gains of 4.9% on Ego4D-VQ3D, 5.8% on OpenEQA, and 11.7% on EnvQA. We have also demonstrated its potential in various embodied AI tasks including generating embodied interactions and perception for robot manipulation. The code and demo will be made public.
+                </p>
+                <b>TL;DR:</b> We introduces Embodied VideoAgent, an LLM-based system that builds dynamic 3D scene memory from egocentric videos and embodied sensors, achieving state-of-the-art performance in reasoning and planning tasks.   
+</section>
+
+
+<section class="section">
+    <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+            <div class="column">
+                <h2 class="title is-3">Method</h2>
+                <div class="content has-text-justified">
+                    <p>
+                    Embodied VideoAgent adopts the following memory and
+                    tool design upon its predecessor <a href="https://videoagent.github.io"><b>VideoAgent</b></a>: given an downsampled egocentric video,
+                    with depth map and camera 6D pose of each frame, it constructs the original temporal memory of <a href="https://videoagent.github.io"><b>VideoAgent</b></a>, the newly introduced <b>Persistent Object Memory</b>, and two simple history buffers. 
+                    Four <b>tools</b> (query_db, temporal_loc, spatial_loc, vqa) can be invoked to access the memory. Several <b>embodied action primitives</b> are available to be called to interact with the physical environment.
+                    </p>
+                </div>
+                <img width="95%" src="static/images/method.png">
+                <figcaption style="font-size: 18px;font-family: 'Times New Roman', Times, serif;", align="center">Figure 2. An overview of Embodied VideoAgent. Left: We first translate the egocentric video and embodied sensory input (depth maps and camera poses) into structured representations: persistent object memory and history buffer. While the memory can be updated using VLM to support dynamic scenes where actions are being performed constantly; Right: the LLM within Embodied VideoAgent is prompted to fulfill the user's request by interactively invoking tools to query the memory and calling embodied action primitives to complete the task.</figcaption>
+                </br>
+
+                <h2 class="title is-5">Persistent Object Memory</h2>
+                <div class="content has-text-justified">
+                    <p>
+                    As shown in Figure 2, Persistent Object Memory maintains an entry for each perceived object in the 3D scene. Each object entry includes the following fields: a unique object identifier with object category (<b>ID</b>), a state description of the object(<b>STATE</b>), a list of related objects and their relations (<b>RO</b>), 3D bounding box of the object(<b>3D Bbox</b>), visual feature of the object (<b>OBJ Feat</b>) and visual feature of the environment context where the object locates(<b>CTX Feat</b>). These fields provide comprehensive details of scene objects and their surroundings. The following figures are the visualization of Persistent Object Memory in both static and dynamic scenes.
+                    </p>
+                </div>
+                <div style="display: flex; justify-content: center; gap: 20px">
+                    <img src="002-scannet-scene0709_00.gif" alt="GIF 1" style="width: 480px; height: auto;">
+                    <img src="003-scannet-scene0762_00.gif" alt="GIF 2" style="width: 480px; height: auto;">
+                </div>
+                <br>
+                <img width="80%" src="catch_can.gif" loop="true" autoplay="true" class="center">
+                <br>
+                <img width="80%" src="hssd_clip.gif" loop="true" autoplay="true" class="center">
+                <br>
+
+
+                <h2 class="title is-5">Memory Update with VLM</h2>
+                <div class="content has-text-justified">
+                    <p>
+                        A key challenge in Persistent
+                        Object Memory lies in updating memory when actions are
+                        performed on objects. We address this issue by leveraging action information and vision language models (VLMs). As shown in Figure 3, when an
+                        action occurs (e.g., “C catches the can”), we first retrieve
+                        relevant object entries associated with the “can” that
+                        are visible in the current frame (in this example, two entries). For each entry, we render its 3D bounding box onto
+                        the frame and prompt the VLM to determine if the object
+                        within the box is the action's target. Such visual prompting associates the action with corresponding entries in the object memory. Finally, we programmatically update these entries, such as modifying the STATE field to “in-hand” since the action is “catches the can”.
+                    </p>
+                </div>
+                <img width="50%" src="static/images/vlm_update.png">
+                <figcaption style="font-size: 18px;font-family: 'Times New Roman', Times, serif;", align="center">Figure 3. An illustration of our VLM-based memory update method.
+                    This approach effectively prompts the VLM to associate an action
+                    with relevant object entries in memory through visual prompting,
+                    identifying the entries corresponding to the action's target objects.</figcaption>
+                </br>
+
+                <h2 class="title is-5">Tools and Action Primitives</h2>
+                <div class="content has-text-justified">
+                    <p>
+                        We equip Embodied VideoAgent with four tools: <b>query_db(·)</b>, which
+                        processes natural language queries to retrieve the top-10
+                        matching object entries by searching both the persistent
+                        object memory and history buffers; <b>temporal_loc(·)</b>,
+                        inherited from VideoAgent, which maps natural language
+                        queries to specific video timesteps; <b>spatial_loc(·)</b>,
+                        which provides a 3D scene location (aligned with the camera's coordinate system) based on object and room queries;
+                        and <b>vqa(·)</b>, which answers open-ended questions about
+                        a given frame. 
+                        
+                        Additionally, the agent can perform seven
+                        embodied action primitives: <b>chat(·)</b> for user interaction;
+                        <b>search(·)</b> to conduct exhaustive scene searches for specified objects; <b>goto(·)</b> for location navigation; and <b>open(·)</b>,
+                        <b>close(·)</b>, <b>pick(·)</b>, and <b>place(·)</b> for object interactions.
+                    </p>
+                </div>
+
+
+<section class="section">
+    <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+            <div class="column">
+                <h2 class="title is-3">A Two-Agent Framework for Generating Embodied Interactions</h2>
+                <div class="content has-text-justified">
+                    <p>
+                        We explore a novel approach with
+                        Embodied VideoAgent to gather synthetic embodied user-assistant interaction data. This dataset comprises episodes
+                        where a user interacts with an assistant within embodied environments. We use one LLM to emulate the user's role, while Embodied VideoAgent assumes the assistant's role, exploring the environment and fulfilling the user's diverse
+                        requests. An overview of this framework is shown in Figure 4. The user is prompted to propose varied and engaging tasks based on its limited scene graph knowledge achieved
+                        by randomly trimming the full scene graph to stimulate curiosity and the assistant's feedback. Examples of the generated episodes can be found in Figure 5.
+                    </p>
+                </div>
+                <img width="60%" src="static/images/two_agent_pipeline.png">
+                <figcaption style="font-size: 18px;font-family: 'Times New Roman', Times, serif;", align="left">Figure 4. An overview of our synthetic embodied data collection
+                    framework. An LLM plays the user role and is prompted to propose
+                    engaging tasks based on a partial scene graph and the user's feedback, while the user, effectively a Embodied VideoAgent, explores
+                    the scene and fulfills the user's requests.</figcaption>
+                </br>
+                <img width="95%" src="static/images/interaction_data.png">
+                <figcaption style="font-size: 18px;font-family: 'Times New Roman', Times, serif;", align="left">Figure 5. An episode of generated embodied user-assistant interaction. The episode is produced by the two-agent framework,
+                where an LLM plays the user and Embodied VideoAgent is the assistant. The episode comprises various embodied problem-solving that
+                requires precise memory of the scene objects and tool usage.</figcaption>
+                </br>
+   
+
+<section class="section">
+    <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+            <div class="column">
+                <h2 class="title is-3">Applications</h2>
+                <div class="content has-text-justified">
+                    <p>
+                        In Figure 6, we showcase Embodied VideoAgent's application in robotic perception, where a
+                        Franka robot uses it to build persistent memory in a dynamic
+                        manipulation scene. In this task, the robot is instructed to
+                        pick up an apple. However, the apple later becomes hidden
+                        behind a box, illustrating the dynamic nature of the scene.
+                        Leveraging persistent object memory, the robot successfully
+                        recalls the apple's location despite the obstruction and completes the task by first moving the box aside, demonstrating
+                        the effectiveness of <b>Persistent OBject Memory</b>.
+                    </p>
+                    <img width="80%" src="manipulation.gif" loop="true" autoplay="true" class="center">
+                    <br>
+                    <figcaption style="font-size: 18px;font-family: 'Times New Roman', Times, serif;" align="center">
+                        Figure 6. Our persistent object memory enables effective real-world robotic manipulation.
+                    </figcaption>
+                    
+
+
+    <!-- <div class="container is-max-desktop">
+      <div class="hero-body">
+        <iframe width="900" height="510"
+           src="">
+        </iframe>
+      </div>
+    </div> -->
+  </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <div class="content has-text-justified">
+        <pre><code>
+            @article{fan2024embodied,
+                title={Embodied VideoAgent: Persistent Memory from Egocentric Videos and Embodied Sensors Enables Dynamic Scene Understanding},
+                author={Fan, Yue and Ma, Xiaojian and Su, Rongpeng and Guo, Jun and Wu, Rujie and Chen, Xi and Li, Qing},
+                journal={arXiv preprint arXiv:2501.00358},
+                year={2024}
+            }
+        </code></pre>
+</section>
+
+      
+</body>
+</html>
